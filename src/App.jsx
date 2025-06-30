@@ -10,6 +10,7 @@ import AppWork from './Components/AppWork/AppWork'
 import Tutorial from './Components/Tutorial/tutoria'
 import Screen from './Components/Screen/Screen'
 import Team from './Components/Team/Team'
+import Feedback from './Components/Feedback/Feedback'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +24,7 @@ function App() {
         <Tutorial/>
         <Screen/>
         <Team/>
+        <Feedback/>
       </Layout>
     </>
   )
