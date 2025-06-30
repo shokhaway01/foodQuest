@@ -25,7 +25,7 @@ export default function AppWork() {
             <img
               src="./src/assets/Img/1.png"
               alt="Phone with app preview"
-              className="w-500 "
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
