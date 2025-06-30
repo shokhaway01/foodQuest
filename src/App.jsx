@@ -8,6 +8,7 @@ import Layout from './utils/layout/layout'
 import Navbar from './Components/Header/Navbar/Navbar'
 import AppWork from './Components/AppWork/AppWork'
 import Tutorial from './Components/Tutorial/tutoria'
+import Screen from './Components/Screen/Screen'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +20,7 @@ function App() {
         <Features/>
         <AppWork/>
         <Tutorial/>
+        <Screen/>
       </Layout>
     </>
   )
