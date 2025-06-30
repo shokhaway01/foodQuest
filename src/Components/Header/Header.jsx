@@ -22,7 +22,7 @@ export default function Header() {
           />
         </div>
 
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-20">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-10">
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               The best for your Taste.
