@@ -3,15 +3,11 @@
 import { useState } from 'react'
 import Navbar from './Navbar/Navbar'
 
-
 export default function Header() {
-
   return (
-    <div className="bg-white" id='home'>
-      {/* <Navbar/> */}
-
+    <div className="bg-white" id="home">
       {/* Hero Section */}
-      <div className="relative isolate px-6 pt-14 lg:px-8" >
+      <div className="relative isolate px-6 pt-14 lg:px-8">
         {/* Top gradient */}
         <div
           aria-hidden="true"
@@ -25,7 +21,8 @@ export default function Header() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ffb347] via-[#ffcc70] to-[#ff758c] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-20">
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               The best for your Taste.
@@ -46,6 +43,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+
         {/* Bottom gradient */}
         <div
           aria-hidden="true"
@@ -61,51 +59,41 @@ export default function Header() {
         </div>
       </div>
 
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-lg/8 font-semibold text-gray-900">
-          Trusted by the contry's most innovative companies
-        </h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
-            alt="Transistor"
-            src="https://yt3.googleusercontent.com/PQ8lhwdRvg-WAwi5XtsdMyUuokF5oM-gZ1lUf8B58SzbM3th7OLQ3NjzgtJNdaPu98MND9lNuw=s900-c-k-c0x00ffffff-no-rj"
-            width={258}
-            height={148}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          />
-          <img
-            alt="Reform"
-            src="https://avatars.mds.yandex.net/i?id=6099f3c990d5750ca9f28bac624fe192483e1790-10018920-images-thumbs&ref=rim&n=33&w=338&h=225"
-            width={258}
-            height={148}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          />
-          <img
-            alt="Tuple"
-            src="https://smartcastuz.storage.yandexcloud.net/landing/partner/partner-f7b6b76c-474f-48ee-ba41-245bb8ecfbf7.png"
-            width={258}
-            height={148}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          />
-          <img
-            alt="SavvyCal"
-            src="https://maxway.uz/images/maxway_cover.png"
-            width={258}
-            height={148}
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          />
-          <img
-            alt="Statamic"
-            src="https://1000logos.net/wp-content/uploads/2017/03/Kfc_logo.png"
-            width={258}
-            height={148}
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          />
-        </div>
-      </div>
-    </div>
+      {/* Infinite Scrolling Logos Section */}
+      <div className="relative overflow-hidden py-12 mt-[0px] bg-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white z-10 pointer-events-none" />
 
+        <div className="whitespace-nowrap flex gap-16 animate-scrollLogos">
+          {[...Array(4)].flatMap(() => [
+            'https://yt3.googleusercontent.com/PQ8lhwdRvg-WAwi5XtsdMyUuokF5oM-gZ1lUf8B58SzbM3th7OLQ3NjzgtJNdaPu98MND9lNuw=s900-c-k-c0x00ffffff-no-rj',
+            'https://avatars.mds.yandex.net/i?id=6099f3c990d5750ca9f28bac624fe192483e1790-10018920-images-thumbs&ref=rim&n=33&w=338&h=225',
+            'https://smartcastuz.storage.yandexcloud.net/landing/partner/partner-f7b6b76c-474f-48ee-ba41-245bb8ecfbf7.png',
+            'https://maxway.uz/images/maxway_cover.png',
+            'https://1000logos.net/wp-content/uploads/2017/03/Kfc_logo.png',
+          ]).map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={`partner-logo-${i}`}
+              className="h-12 w-auto object-contain hover:scale-110 transition-transform duration-300"
+            />
+          ))}
+        </div>
+
+        <style jsx>{`
+          @keyframes scrollLogos {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scrollLogos {
+            animation: scrollLogos 30s linear infinite;
+          }
+        `}</style>
+      </div>
     </div>
   )
 }
