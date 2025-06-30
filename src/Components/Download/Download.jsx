@@ -51,7 +51,7 @@ export default function DownloadSection() {
     <section className="relative h-screen overflow-hidden" id="download">
       {/* Градиентный фон */}
       <div
-        className="absolute inset-0 z-0 bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] opacity-70 blur-2xl pointer-events-none"
+        className="absolute inset-0 z-0 bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] opacity-30 blur-2xl pointer-events-none"
         aria-hidden="true"
       />
 
@@ -74,7 +74,7 @@ export default function DownloadSection() {
         <h2 className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-pink-400 to-red-400">
           Get the App
         </h2>
-        <p className="mt-4 text-lg sm:text-xl text-white/80 max-w-xl">
+        <p className="mt-4 text-lg sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-red-400 to-orange-400 max-w-xl">
           Download FoodQuest now and unlock the flavors of the world.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
