@@ -51,7 +51,7 @@ export default function DownloadSection() {
     <section className="relative h-screen overflow-hidden" id="download">
       {/* Градиентный фон */}
       <div
-        className="absolute inset-0 z-0 bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] opacity-30 blur-2xl pointer-events-none"
+        className="absolute inset-0 z-0 bg-gradient-to-br from-[#fefcea] to-[#f1daff] opacity-30 blur-sm pointer-events-none"
         aria-hidden="true"
       />
 
