@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: 'Shokh Karímov',
     role: 'Frontend Developer',
-    image: '../../src/assets/Team/shoh.jpg',
+    image: 'https://clashroyale.inbox.supercell.com/9jtsgmsiuthj/0PA7XhR7sfm6T9zPFnuaxpVxCqLgmtglx4PtZpu4Zos/1282c2e35ff5b9fd4d851386ca174f91/Kr-20180509-small.jpg',
     bio: 'Focused on user experience and animation-driven interfaces.',
     socials: {
       instagram: 'https://instagram.com/shokhaway',
@@ -19,70 +19,16 @@ const teamMembers = [
   {
     name: 'Хабиб',
     role: 'UI/UX Designer',
-    image: '../../src/assets/Team/shoh.jpg',
+    image: 'https://clashroyale.inbox.supercell.com/9jtsgmsiuthj/0PA7XhR7sfm6T9zPFnuaxpVxCqLgmtglx4PtZpu4Zos/1282c2e35ff5b9fd4d851386ca174f91/Kr-20180509-small.jpg',
     bio: 'Designs elegant and modern UI experiences.',
     socials: {
       twitter: 'https://twitter.com/janedoe',
     },
   },
   {
-    name: 'John Smith',
+    name: 'Boburjon Allayorov',
     role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
-    bio: 'Handles the core logic and performance backend.',
-    socials: {
-      github: 'https://github.com/johnsmith',
-    },
-  },
-  {
-    name: 'John Smith',
-    role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
-    bio: 'Handles the core logic and performance backend.',
-    socials: {
-      github: 'https://github.com/johnsmith',
-    },
-  },
-  {
-    name: 'John Smith',
-    role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
-    bio: 'Handles the core logic and performance backend.',
-    socials: {
-      github: 'https://github.com/johnsmith',
-    },
-  },
-  {
-    name: 'John Smith',
-    role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
-    bio: 'Handles the core logic and performance backend.',
-    socials: {
-      github: 'https://github.com/johnsmith',
-    },
-  },
-  {
-    name: 'John Smith',
-    role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
-    bio: 'Handles the core logic and performance backend.',
-    socials: {
-      github: 'https://github.com/johnsmith',
-    },
-  },
-  {
-    name: 'John Smith',
-    role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
-    bio: 'Handles the core logic and performance backend.',
-    socials: {
-      github: 'https://github.com/johnsmith',
-    },
-  },
-  {
-    name: 'John Smith',
-    role: 'Backend Engineer',
-    image: '../../src/assets/Team/shoh.jpg',
+    image: 'https://clashroyale.inbox.supercell.com/9jtsgmsiuthj/0PA7XhR7sfm6T9zPFnuaxpVxCqLgmtglx4PtZpu4Zos/1282c2e35ff5b9fd4d851386ca174f91/Kr-20180509-small.jpg',
     bio: 'Handles the core logic and performance backend.',
     socials: {
       github: 'https://github.com/johnsmith',
