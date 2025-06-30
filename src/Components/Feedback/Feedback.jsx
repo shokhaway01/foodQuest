@@ -38,7 +38,7 @@ export default function Feedback() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const message = `📢 Новый отзыв:\n\n👤 Имя: ${userName}\n💼 Профессия: ${userRole}\n💬 Отзыв: ${userMessage}`
+    const message = `Господин, у нас новый Отзыв!:\n\n👤 Имя: ${userName}\n💼 Профессия: ${userRole}\n💬 Отзыв: ${userMessage}`
 
     try {
       await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {

@@ -11,6 +11,9 @@ import Tutorial from './Components/Tutorial/tutoria'
 import Screen from './Components/Screen/Screen'
 import Team from './Components/Team/Team'
 import Feedback from './Components/Feedback/Feedback'
+import FAQSection from "./Components/FAQ/Faq.jsx";
+import DownloadSection from './Components/Download/Download.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -25,6 +28,9 @@ function App() {
         <Screen/>
         <Team/>
         <Feedback/>
+        <FAQSection/>
+        <DownloadSection/>
+        <Footer/>
       </Layout>
     </>
   )
