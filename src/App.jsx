@@ -9,6 +9,7 @@ import Navbar from './Components/Header/Navbar/Navbar'
 import AppWork from './Components/AppWork/AppWork'
 import Tutorial from './Components/Tutorial/tutoria'
 import Screen from './Components/Screen/Screen'
+import Team from './Components/Team/Team'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +22,7 @@ function App() {
         <AppWork/>
         <Tutorial/>
         <Screen/>
+        <Team/>
       </Layout>
     </>
   )
