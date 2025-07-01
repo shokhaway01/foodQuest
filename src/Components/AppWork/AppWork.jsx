@@ -57,7 +57,7 @@ export default function AppWork() {
 
           <div>
             <a
-              href="#"
+              href="#download"
               className="inline-block rounded-full bg-gradient-to-r from-orange-400 via-pink-500 to-red-500 px-6 py-3 text-white text-sm font-bold shadow-md hover:scale-105 hover:brightness-110 transition-all"
             >
               📲 Download the App

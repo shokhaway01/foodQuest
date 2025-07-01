@@ -32,12 +32,12 @@ export default function Header() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="#app-work"
                 className="rounded-full bg-gradient-to-r from-lime-500 via-yellow-400 to-orange-400 px-5 py-2.5 text-sm font-bold text-white shadow-lg hover:scale-105 transition"
               >
                 🍽 Get Started
               </a>
-              <a href="#" className="text-sm font-semibold text-gray-900">
+              <a href="#faq" className="text-sm font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

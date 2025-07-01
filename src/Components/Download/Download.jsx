@@ -57,7 +57,7 @@ export default function DownloadSection() {
 
       {/* 3D или мобильный контент */}
       {!isMobile && (
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden max-w-full">
           <Canvas camera={{ position: [0, 1, 4], fov: 50 }}>
             <ambientLight intensity={1.2} />
             <directionalLight position={[2, 5, 3]} intensity={2} color="#ffffff" />

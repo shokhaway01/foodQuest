@@ -6,9 +6,9 @@ import 'aos/dist/aos.css'
 
 const navigation = [
   { name: 'Home', href: '#home' },
-  { name: 'Menu', href: '#features' },
-  { name: 'Order', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'About', href: '#features' },
+  { name: 'Team', href: '#team' },
+  { name: 'Contact', href: '#feedback' },
 ]
 
 export default function Navbar() {
@@ -60,7 +60,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="#"
+            href="#download"
             className="rounded-full bg-gradient-to-r from-orange-400 via-pink-400 to-red-400 px-4 py-2 text-sm font-bold text-white shadow-md hover:scale-105 hover:brightness-110 transition-all duration-300"
           >
             🍓 Download App

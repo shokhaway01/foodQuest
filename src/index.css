@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-    overflow-x: hidden;
 
+/* globals.css или в tailwind config через base */
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }

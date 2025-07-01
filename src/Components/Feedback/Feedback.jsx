@@ -72,7 +72,7 @@ export default function Feedback() {
 
       {/* Testimonials carousel */}
       <div className="mt-20 overflow-hidden">
-        <div className="flex gap-8 w-max animate-scrollX px-6">
+        <div className="flex gap-8 w-max animate-scrollX px-6" id='feedback'>
           {[...testimonials, ...testimonials].map((review, index) => (
             <motion.div
               key={index}
@@ -93,7 +93,7 @@ export default function Feedback() {
       </div>
 
       {/* Feedback form */}
-      <div className="mt-24 max-w-xl mx-auto px-4">
+      <div className="mt-24 max-w-xl mx-auto px-4" >
         <h3 className="text-2xl font-bold text-gray-800 text-center">Leave Your Feedback</h3>
         <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
           <input
